@@ -1,0 +1,17 @@
+import numpy as np
+
+# Cálculo de probabilidades
+# Supongamos que tenemos una lista de eventos y sus probabilidades
+eventos = ["A", "B", "C"]
+probabilidades = [0.3, 0.4, 0.3]
+
+# Calcular la probabilidad de un evento específico
+evento_buscado = "B"
+indice = eventos.index(evento_buscado)
+probabilidad_evento = probabilidades[indice]
+print(f"La probabilidad de '{evento_buscado}' es {probabilidad_evento}")
+
+# Generación de números aleatorios a partir de una distribución discreta
+# En este ejemplo, generaremos 10 números aleatorios basados en las probabilidades
+numeros_aleatorios = np.random.choice(eventos, size=10, p=probabilidades)
+print("Números aleatorios generados:", numeros_aleatorios)
